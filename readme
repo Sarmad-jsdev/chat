@@ -1,0 +1,68 @@
+# Access Form – Color-Coded Use Case Hierarchy
+
+## Actors and Use Cases
+
+### 1. Admin [Green]
+- **Manage Users [Green]**
+  - Add User [Light Green]
+  - Edit User [Light Green]
+  - Delete User [Light Green]
+- **Manage Forms [Green]**
+  - View Forms [Light Green]
+  - Edit Forms [Light Green]
+  - Delete Forms [Light Green]
+- **Monitor Accessibility Compliance [Green]**
+  - <<include>> Ensure Accessibility Standards [Light Green]
+- **View Analytics / Reports [Green]**
+  - Filter Reports [Light Green]
+  - Export CSV/Excel/PDF [Light Green]
+
+### 2. Form Creator [Blue]
+- **Create Form [Blue]**
+  - Add Questions (MCQ, Text, Rating, File Upload) [Light Blue]
+  - Reorder/Delete Questions [Light Blue]
+  - Preview Form [Light Blue]
+  - <<include>> Enable Accessibility Features [Light Blue]
+    - Keyboard Navigation
+    - Screen Reader
+    - High-Contrast / Dyslexia-Friendly Themes
+    - Alt Text for Images
+    - Captions / Sign-Language Video
+- **Share Form [Blue]**
+  - Via Web [Light Blue]
+  - Email [Light Blue]
+  - SMS [Light Blue]
+- **View Responses / Analytics [Blue]**
+  - Filter Responses [Light Blue]
+  - Export Data CSV/Excel/PDF [Light Blue]
+
+### 3. Respondent [Orange]
+- **Fill Form [Orange]**
+  - <<extend>> Voice Input / Speech-to-Text [Light Orange]
+  - Keyboard Navigation [Light Orange]
+- **Submit Form [Orange]**
+  - N/A
+- **Use Accessibility Features [Orange]**
+  - Screen Reader [Light Orange]
+  - High-Contrast / Dyslexia-Friendly Themes [Light Orange]
+  - Captions / Sign-Language Video [Light Orange]
+
+### 4. All Actors [Purple]
+- **Authenticate User [Purple]**
+  - Login / Logout [Light Purple]
+
+### 5. System [Gray]
+- **Store Responses [Gray]**
+  - N/A
+- **Export Data [Gray]**
+  - CSV, Excel, PDF [Light Gray]
+
+---
+
+## Tips for Drawing
+- Use **actor colors** (Green, Blue, Orange, Purple) outside the system rectangle.
+- Main use case ellipses → same color as actor.
+- Sub-use cases → lighter shade of the same color, connected to main use case.
+- **<<include>> relationships** → dashed arrow pointing to sub-use case.
+- **<<extend>> relationships** → dashed arrow pointing from base to extended case.
+- **System processes (Gray)** → place inside system boundary but separate from actor-related use cases.
